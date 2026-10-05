@@ -42,6 +42,7 @@ Import any CSV file to Pandas DataFrame
 import pandas as pd
 df = pd.read_csv ('winequality-red.csv')
 print(df)
+OUTPUT
 fixed acidity;"volatile acidity";
 "citric acid";"residual sugar";
 "chlorides";"free sulfur 
@@ -156,4 +157,4 @@ df3=df.rename(columns={'Team':'Team_name'},inplace=True)
 
 Output:
 
-
+{EMBED PBrush}
