@@ -1,7 +1,6 @@
-employees.csv:
-Link for dataset: [https://media.geeksforgeeks.org/wp-co...]
 a) Handle missing data by detecting and dropping/ filling missing values
 (i) Using isnull() -> Team column is checked for NULL values and a boolean series is returned by the isnull() method which stores True for ever NaN value and False for a Not null value.
+PROGRAM
 # importing pandas package
 import pandas as pd
 # making data frame from csv file
