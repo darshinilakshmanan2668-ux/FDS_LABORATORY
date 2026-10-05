@@ -1,34 +1,18 @@
-'winequality-red.csv':
-The data was downloaded from the UCI Machine Learning Repository, and is available in https://archive.ics.uci.edu/ml/datasets/Wine+Quality. Here are the first few rows of the winequality-red.csv file
-"fixed acidity";"volatile acidity";"citric acid";"residual sugar";"chlorides";"free sulfur dioxide";"total sulfur dioxide";"density";"pH";"sulphates";"alcohol";"quality"
-7.4;0.7;0;1.9;0.076;11;34;0.9978;3.51;0.56;9.4;5
-7.8;0.88;0;2.6;0.098;25;67;0.9968;3.2;0.68;9.8;5
-
-
-employees.csv:
-Link for dataset: [https://media.geeksforgeeks.org/wp-co...]
-
-
+PROGRAM
 a. Create Pandas Series and DataFrame from various inputs.
-Property
-Program
-Output
-
-
-Creating a simple Series
+Property.Creating a simple Series
 import pandas as pd
 import matplotlib.pyplot as plt
 author = ['Jitender', 'Purnima', 'Arpit', 'Jyoti']
 auth_series = pd.Series(author)
 print(auth_series)
+OUTPUT
 0    Jitender
 1     Purnima
 2       Arpit
 3       Jyoti
 dtype: object
 
-
-Add series externally in dataframe
 import pandas as pd
 import matplotlib.pyplot as plt
 author = ['Jitender', 'Purnima', 'Arpit', 'Jyoti']
@@ -40,6 +24,7 @@ result = pd.DataFrame(frame)
 age = [21, 21, 24, 23]
 result['Age'] = pd.Series(age)
 print(result)
+OUTPUT
      Author  Article  Age
 0   Jitender      210   21
 1   Purnima      211   21
@@ -53,9 +38,6 @@ b. Import any CSV file to Pandas DataFrame and perform the following operations
 
 Property
 Program
-Output
-
-
 Import any CSV file to Pandas DataFrame
 import pandas as pd
 df = pd.read_csv ('winequality-red.csv')
